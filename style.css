@@ -1,0 +1,337 @@
+body {
+	padding: 0;
+	margin: 0;
+	
+}
+
+header {
+	position: fixed;
+	background: #292929;
+	padding: 20px;
+	height: 30px;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+
+
+}
+
+/*** log ***/
+.left-area h3{
+	color: white;
+	margin: 0;
+	margin-left: 60px;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 800;
+}
+
+.left-area span{
+	color: #ff8103;
+}
+
+/******* SIDEBAR ********/
+.sidebar{
+
+	background: #2a2b2a;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 280px;
+	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
+}
+
+
+.sidebar a{
+	color: white;
+	display: block;
+	line-height: 70px;
+	width: 100%;
+	text-decoration: none;
+	padding-left: 55px;
+	box-sizing: border-box; 
+	transition: 0.4s;
+	transition-property: background;
+	font-size: 20px;
+	margin-right: 30px;
+
+
+}
+
+.sidebar a:hover{
+	background-color: #ff8103;
+	width: 280px; 
+}
+
+.sidebar i {
+	padding-right: 20px;
+}
+
+/** Formatação esconder sidebar **/
+label #sidebar-btn {
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	left: 30px;
+	margin: 5px 0;
+	font-size: 20px;
+	transition: 0.4s;
+	transition-property: color;
+
+}
+
+label #sidebar-btn:hover {
+	color: #ff8103; 
+}
+
+#check:checked ~ .sidebar {
+	left:-200px;
+}
+
+#check:checked ~ .sidebar a span{
+	display: none;
+}
+
+#check:checked ~ .sidebar a {
+	font-size: 20px;
+	margin-left: 170px;
+	width: 110px;
+}
+
+/** Formatação do fundo backgroundimagen **/
+.content {
+	margin-left:250px;
+	background: url(./_imagens/fundo.png) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100vh;
+	transition: 0.5s;
+
+}
+
+/** esconde nav **/ 
+#check:checked ~ .content{
+	margin-left: 60px;
+
+}
+
+#check{
+	display: none;
+}
+
+/** sections first-about**/
+
+.first{
+	height: 900px;
+	display: flex;
+	width: auto;
+	margin: 0 auto;
+	background-image: url(./_imagens/fundo.png);
+	background-size: cover;
+	background-attachment: fixed;
+	
+
+}
+
+
+.item2 {
+	display: flex;
+	margin-top: 60px;
+	margin-bottom: 150px;
+	margin-left: 115px;
+	background: black;
+	
+
+}
+
+.item2 h1{
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 640px;
+	color: white;
+	font-family: "Roboto", sans-serif;
+
+}
+
+.photo {
+	margin-right: 50px;
+	margin-top: 150px;
+	
+}
+
+img {
+	
+	border-radius: 50%;
+
+}
+
+
+.text-about {
+	width: 500px;
+	color: white;
+	padding-top: 130px;
+
+}
+
+.text-about p{
+	font-size: 15px;
+	line-height: 30px;
+	margin-left: 40px;
+	font-family: "Roboto mono", sans-serif;
+
+}
+
+/** section second-skill **/
+
+.second{
+
+	height: 600px;
+	background-image: url(./_imagens/fundo.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.skill{
+	margin-left: 115px;
+	margin-right: 40px;
+	margin-top: 0px;
+	background-color: black;
+}
+
+.text-skill {
+	display: flex;
+	
+}
+
+.text-hardware{
+	flex: 1;
+	margin: 70px;
+	margin-top: 120px;
+	font-family: "Roboto mono", sans-serif;
+
+	
+	
+}
+
+.text-software{
+	flex: 1;
+	margin: 70px;
+	margin-top: 120px;
+	font-family: "Roboto mono", sans-serif;
+
+}
+
+.skill p, h3, lu {
+	color: white;
+}
+
+.skill h1 {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 70px;
+	color: white;
+
+}
+
+/** section third-contact **/
+.third {
+	height: 800px;
+	display: flex;
+	background-image: url(./_imagens/fundo.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+
+.contt {
+	background-color: black;
+	margin-left: 115px;
+	padding-right: 115px;
+	margin-bottom: 300px;	
+	
+}
+
+.contt h1{
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+	
+}
+
+form {
+	width: 70%;
+	margin-left: 200px;
+	
+}
+
+input, textarea{
+	width: 100%;
+	height: 30px;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+textarea {
+	height: 100px;
+}
+
+.enviar {
+	background-color: #ff8103;
+	width: 35%;
+	height: 40px;
+	font-size: 14pt;
+	border-radius:  20px;
+	
+
+
+}
+
+.enviar:hover{
+	background-color: #eb4444;
+}
+
+.enviar span {
+	font-size: 16pt;
+	color: white;
+
+}
+/**** Social Incons****/
+
+.social-icons{
+	text-align: center;
+	padding: 20px;
+	display: flex;
+}
+
+.social-icons a{
+	text-decoration: none;
+	color: white;
+	background-color: gray;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 0px 10px;
+	text-align: center;
+	
+	
+}
+
+.social-icons i{
+	line-height: 40px;
+}
+
+/*** FOOTER ***/
+footer {
+	text-align: center;
+	background-color: #ff8103;
+}
+
+
