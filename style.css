@@ -234,6 +234,8 @@ img {
 	text-align: center;
 	margin-top: 70px;
 	color: white;
+	font-family: "Roboto", sans-serif;
+	
 
 }
 
@@ -245,27 +247,32 @@ img {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	
+
 }
+
+/*** FORMAT FORM **/
 
 .contt {
 	background-color: black;
 	margin-left: 115px;
-	padding-right: 115px;
 	margin-bottom: 300px;	
-	
+	width: 990px;
+	padding: 10px 100px 30px 10px;
 }
 
 .contt h1{
 	color: white;
 	text-align: center;
 	margin-bottom: 50px;
+	margin-left: 99px;
+	font-size: 25px;
+	font-family: "Roboto", sans-serif;
 	
 }
 
 form {
 	width: 70%;
-	margin-left: 200px;
+	margin-left: 168px;
 	
 }
 
@@ -283,23 +290,23 @@ textarea {
 }
 
 .enviar {
-	background-color: #ff8103;
+	background-color: #7a7a7a;
 	width: 35%;
 	height: 40px;
 	font-size: 14pt;
 	border-radius:  20px;
-	
-
+	margin-left: 261px;
+	margin-top: 10px;
 
 }
 
 .enviar:hover{
-	background-color: #eb4444;
+	background-color: #ff8103;
 }
 
 .enviar span {
 	font-size: 16pt;
-	color: white;
+	color: #000000;
 
 }
 /**** Social Incons****/
@@ -307,7 +314,8 @@ textarea {
 .social-icons{
 	text-align: center;
 	padding: 20px;
-	display: flex;
+	
+	
 }
 
 .social-icons a{
